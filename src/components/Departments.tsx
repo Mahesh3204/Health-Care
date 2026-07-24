@@ -29,7 +29,7 @@ const Departments: React.FC = () => (
       </div>
 
       {/* Tile grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 1, background: 'var(--gray-150)', border: '1px solid var(--gray-150)', borderRadius: 'var(--r-xl)', overflow: 'hidden' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 220px), 1fr))', gap: 1, background: 'var(--gray-150)', border: '1px solid var(--gray-150)', borderRadius: 'var(--r-xl)', overflow: 'hidden' }}>
         {departments.map((d, i) => (
           <a key={d.name} href="#appointment" id={`dept-${d.name.toLowerCase()}`} style={{ display: 'block', padding: '24px 22px', background: 'white', textDecoration: 'none', transition: 'background var(--t-fast)', animationDelay: `${i * 0.04}s`, animation: 'fadeInUp 0.4s ease forwards', opacity: 0 }}
             onMouseEnter={e => (e.currentTarget.style.background = 'var(--primary-50)')}
@@ -50,7 +50,7 @@ const Departments: React.FC = () => (
           <h3 style={{ color: 'white', fontWeight: 800, fontSize: '1.15rem', marginBottom: 6, letterSpacing: '-0.02em' }}>Not sure which specialist you need?</h3>
           <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.875rem' }}>Our care coordinators guide you to the right department — 24/7.</p>
         </div>
-        <div style={{ display: 'flex', gap: 10, flexShrink: 0 }}>
+        <div style={{ display: 'flex', gap: 10, flexShrink: 0, flexWrap: 'wrap' }}>
           <a href="tel:18001234567" className="btn btn-ghost-white btn-sm">📞 Call</a>
           <a href="#appointment" className="btn btn-sm" style={{ background: 'white', color: 'var(--gray-900)', fontWeight: 700 }}>Book consultation</a>
         </div>

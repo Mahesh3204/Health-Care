@@ -62,7 +62,7 @@ const AppointmentBooking: React.FC = () => {
                 {step === 1 && (
                   <div style={{ animation: 'fadeInUp 0.3s ease' }}>
                     <h3 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--gray-900)', fontSize: '1.05rem' }}>Personal information</h3>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
+                    <div id="personal-info-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
                       <div className="form-group"><label className="form-label">Full name</label><input id="appt-name" className="form-control" type="text" placeholder="Jane Smith" value={form.name} onChange={e => upd('name', e.target.value)} required /></div>
                       <div className="form-group"><label className="form-label">Phone number</label><input id="appt-phone" className="form-control" type="tel" placeholder="+91 98765 43210" value={form.phone} onChange={e => upd('phone', e.target.value)} required /></div>
                     </div>
@@ -123,7 +123,10 @@ const AppointmentBooking: React.FC = () => {
           </div>
         </div>
       </div>
-      <style>{`@media (max-width: 860px) { #appointment > .container > div:last-child { grid-template-columns: 1fr !important; } }`}</style>
+      <style>{`
+        @media (max-width: 860px) { #appointment > .container > div:last-child { grid-template-columns: 1fr !important; } }
+        @media (max-width: 480px) { #personal-info-grid { grid-template-columns: 1fr !important; } }
+      `}</style>
     </section>
   );
 };

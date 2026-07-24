@@ -24,7 +24,7 @@ const Footer: React.FC = () => (
 
     {/* Main */}
     <div className="container" style={{ paddingTop: 56, paddingBottom: 40 }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1.4fr', gap: 40, marginBottom: 48 }}>
+      <div id="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1.4fr', gap: 40, marginBottom: 48 }}>
         {/* Brand */}
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
@@ -91,6 +91,10 @@ const Footer: React.FC = () => (
         </div>
       </div>
     </div>
+    <style>{`
+      @media (max-width: 1024px) { #footer-grid { grid-template-columns: 1fr 1fr 1fr !important; gap: 32px !important; } }
+      @media (max-width: 640px) { #footer-grid { grid-template-columns: 1fr !important; gap: 28px !important; } }
+    `}</style>
   </footer>
 );
 

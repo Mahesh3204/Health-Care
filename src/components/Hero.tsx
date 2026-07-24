@@ -12,7 +12,7 @@ const Hero: React.FC = () => (
     {/* Grid background */}
     <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: 'linear-gradient(var(--gray-150) 1px, transparent 1px), linear-gradient(90deg, var(--gray-150) 1px, transparent 1px)', backgroundSize: '48px 48px', opacity: 0.45, maskImage: 'radial-gradient(ellipse 80% 70% at 50% 0%, black 40%, transparent 100%)' }} />
     {/* Blue blob */}
-    <div style={{ position: 'absolute', top: '10%', right: '5%', width: 480, height: 480, background: 'radial-gradient(circle, rgba(25,86,168,0.06) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
+    <div style={{ position: 'absolute', top: '10%', right: '5%', width: 480, height: 480, maxWidth: '100vw', background: 'radial-gradient(circle, rgba(25,86,168,0.06) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
 
     <div className="container" style={{ position: 'relative' }}>
       {/* Trust pill */}
