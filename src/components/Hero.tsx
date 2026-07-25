@@ -41,11 +41,11 @@ const Hero: React.FC = () => (
       </div>
 
       {/* Stats bar */}
-      <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap', borderTop: '1px solid var(--gray-150)', paddingTop: 32, animation: 'fadeInUp 0.6s 0.4s ease both' }}>
+      <div className="hero-stats-bar" style={{ display: 'flex', gap: 0, flexWrap: 'wrap', borderTop: '1px solid var(--gray-150)', paddingTop: 32, animation: 'fadeInUp 0.6s 0.4s ease both' }}>
         {stats.map((s, i) => (
-          <div key={s.label} style={{ flex: '1 1 120px', paddingRight: 32, marginRight: 32, borderRight: i < stats.length - 1 ? '1px solid var(--gray-150)' : 'none' }}>
+          <div key={s.label} className="hero-stat-card" style={{ flex: '1 1 120px', paddingRight: 32, marginRight: 32, borderRight: i < stats.length - 1 ? '1px solid var(--gray-150)' : 'none' }}>
             <div style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 900, color: 'var(--gray-900)', fontFamily: 'var(--font-display)', letterSpacing: '-0.04em', lineHeight: 1.1, marginBottom: 4 }}>
-              {s.value}
+               {s.value}
             </div>
             <div style={{ fontSize: '0.78rem', color: 'var(--gray-400)', fontWeight: 500 }}>{s.label}</div>
           </div>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => (
       {/* Hero image */}
       <div style={{ position: 'absolute', top: 0, right: 0, width: '42%', maxWidth: 440, animation: 'fadeInRight 0.8s 0.2s ease both' }} className="hero-img-wrap">
         <div style={{ borderRadius: 'var(--r-2xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', border: '1px solid var(--gray-150)', background: 'white', position: 'relative' }}>
-          <img src="/hero_doctor.png" alt="Expert doctors at Medicare Plus" style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }} />
+          <img src="/hero_doctor.png" alt="Expert doctors at Medicare One" style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }} />
           <div style={{ padding: '16px 20px', background: 'white', borderTop: '1px solid var(--gray-100)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div>
               <div style={{ fontWeight: 700, fontSize: '0.875rem', color: 'var(--gray-900)' }}>Expert Medical Team</div>

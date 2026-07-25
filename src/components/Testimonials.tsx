@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const items = [
   { name: 'Priya Sharma',        role: 'Bypass Surgery · Delhi',     rating: 5, text: "Dr. Patel and her team gave me a new lease on life. Professional, warm, and always available. The facilities are genuinely world-class — I felt safe every step of the way.", avatar: '👩', tag: 'Cardiology' },
-  { name: 'Rajan Mehta',         role: 'Knee Replacement · Mumbai',  rating: 5, text: "Back on my feet in 3 weeks. The physiotherapy team is exceptional. I only regret not coming to Medicare Plus sooner — two years of unnecessary pain.", avatar: '👨', tag: 'Orthopedics' },
+  { name: 'Rajan Mehta',         role: 'Knee Replacement · Mumbai',  rating: 5, text: "Back on my feet in 3 weeks. The physiotherapy team is exceptional. I only regret not coming to Medicare One sooner — two years of unnecessary pain.", avatar: '👨', tag: 'Orthopedics' },
   { name: 'Anita Krishnamurthy', role: 'Maternity Care · Bangalore', rating: 5, text: "My delivery experience was everything I could hope for. The nursing team was attentive, the NICU handled my baby's early arrival with incredible expertise.", avatar: '👩', tag: 'Gynecology' },
   { name: 'Suresh Nair',         role: 'Stroke Management · Chennai',rating: 5, text: "Rushed in mid-stroke. The team responded in minutes, treated within the golden hour, and I recovered with minimal deficit. They literally saved my life.", avatar: '👨', tag: 'Neurology' },
 ];
@@ -77,8 +77,12 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
       <style>{`
-        @media (max-width: 860px) { #testimonials > .container > div:nth-child(3) { grid-template-columns: 1fr !important; } }
-        @media (max-width: 640px) { #testimonials > .container > div:last-child { flex-wrap: wrap !important; } #testimonials > .container > div:last-child > div { border-right: none !important; border-bottom: 1px solid var(--gray-150); } }
+        @media (max-width: 860px) { #testimonials > .container > div:nth-child(2) { grid-template-columns: 1fr !important; } }
+        @media (max-width: 640px) { 
+          #testimonials > .container > div:last-child { flex-wrap: wrap !important; } 
+          #testimonials > .container > div:last-child > div { flex: 1 1 100% !important; border-right: none !important; border-bottom: 1px solid var(--gray-150); } 
+          #testimonials > .container > div:last-child > div:last-child { border-bottom: none !important; }
+        }
       `}</style>
     </section>
   );

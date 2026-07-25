@@ -32,7 +32,7 @@ const Footer: React.FC = () => (
               <svg viewBox="0 0 24 24" width="18" height="18" fill="var(--gray-900)"><path d="M15 2H9v6H3v6h6v6h6v-6h6V8h-6V2z"/></svg>
             </div>
             <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 800, color: 'white', letterSpacing: '-0.03em' }}>
-              Medicare<span style={{ fontWeight: 400, color: 'rgba(255,255,255,0.4)' }}> Plus</span>
+              Medicare<span style={{ fontWeight: 400, color: 'rgba(255,255,255,0.4)' }}> One</span>
             </span>
           </div>
           <p style={{ fontSize: '0.82rem', lineHeight: 1.8, marginBottom: 20, maxWidth: 240, color: 'rgba(255,255,255,0.35)' }}>India's premier multi-specialty hospital delivering world-class care since 2000.</p>
@@ -68,7 +68,7 @@ const Footer: React.FC = () => (
         {/* Contact */}
         <div>
           <h4 style={{ color: 'white', fontSize: '0.8rem', fontWeight: 700, marginBottom: 16, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Contact</h4>
-          {[{ i:'📍', t:'1 Medicare Blvd, New Delhi 110001' }, { i:'📞', t:'1800-MED-CARE (24/7)' }, { i:'✉️', t:'care@medicareplus.com' }, { i:'🕐', t:'OPD: Mon–Sat 8 AM–8 PM' }].map(c => (
+          {[{ i:'📍', t:'1 Medicare Blvd, New Delhi 110001' }, { i:'📞', t:'1800-MED-CARE (24/7)' }, { i:'✉️', t:'care@medicareone.com' }, { i:'🕐', t:'OPD: Mon–Sat 8 AM–8 PM' }].map(c => (
             <div key={c.t} style={{ display: 'flex', gap: 10, marginBottom: 12, alignItems: 'flex-start' }}>
               <span style={{ fontSize: '0.85rem', flexShrink: 0, marginTop: 1 }}>{c.i}</span>
               <span style={{ fontSize: '0.78rem', lineHeight: 1.6 }}>{c.t}</span>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => (
 
       {/* Bottom bar */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: 20, display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
-        <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)' }}>© 2026 Medicare Plus Hospital Pvt. Ltd. All rights reserved.</p>
+        <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)' }}>© 2026 Medicare One Hospital Pvt. Ltd. All rights reserved.</p>
         <div style={{ display: 'flex', gap: 16 }}>
           {['Privacy','Terms','Disclaimer','Sitemap'].map(l => (
             <a key={l} href="#" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)', textDecoration: 'none', transition: 'color var(--t-fast)' }}

@@ -124,7 +124,7 @@ const AppointmentBooking: React.FC = () => {
         </div>
       </div>
       <style>{`
-        @media (max-width: 860px) { #appointment > .container > div:last-child { grid-template-columns: 1fr !important; } }
+        @media (max-width: 860px) { #appointment > .container > div:nth-of-type(2) { grid-template-columns: 1fr !important; } }
         @media (max-width: 480px) { #personal-info-grid { grid-template-columns: 1fr !important; } }
       `}</style>
     </section>

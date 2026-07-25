@@ -61,7 +61,17 @@ const EmergencyServices: React.FC = () => (
         ))}
       </div>
     </div>
-    <style>{`@media (max-width: 860px) { #emergency > .container > div:first-child { grid-template-columns: 1fr !important; } }`}</style>
+    <style>{`
+      @media (max-width: 860px) { 
+        #emergency > .container > div:first-child { grid-template-columns: 1fr !important; }
+        #emergency > .container > div:last-child { grid-template-columns: 1fr 1fr !important; }
+      }
+      @media (max-width: 640px) {
+        #emergency > .container > div:last-child { grid-template-columns: 1fr !important; }
+        #emergency > .container > div:last-child > div { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        #emergency > .container > div:last-child > div:last-child { border-bottom: none !important; }
+      }
+    `}</style>
   </section>
 );
 

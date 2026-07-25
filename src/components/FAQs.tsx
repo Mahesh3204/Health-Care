@@ -5,7 +5,7 @@ const faqs = [
   { q: 'Which insurance plans do you accept?',    a: 'We accept 150+ plans including Star Health, HDFC ERGO, Max Bupa, Niva Bupa, Cigna, and government schemes (CGHS, ECHS, Ayushman Bharat / PMJAY).' },
   { q: 'What are the visiting hours?',            a: 'General wards: 10 AM–12 PM and 4–7 PM. ICU: 2 immediate family members, 15 minutes, twice daily. Please confirm ward-specific rules with the nursing station.' },
   { q: 'Are video consultations available?',      a: 'Yes — choose "Video Consult" while booking. You receive a secure video link 15 minutes before the scheduled time. Available for follow-ups and non-emergency consultations.' },
-  { q: 'How do I access my reports online?',      a: 'Reports appear on our patient portal within 24 hours. Log in at patient.medicareplus.com with your registered mobile. Reports are also sent via WhatsApp and email automatically.' },
+  { q: 'How do I access my reports online?',      a: 'Reports appear on our patient portal within 24 hours. Log in at patient.medicareone.com with your registered mobile. Reports are also sent via WhatsApp and email automatically.' },
   { q: 'Is there a 24-hour pharmacy?',            a: 'Yes — fully stocked, open 24/7 at the main building entrance. Home delivery of prescribed medicines is available within 2–4 hours in select cities.' },
   { q: 'What should I bring on my first visit?',  a: 'Photo ID, insurance / TPA card, previous medical records, a list of current medications, and your appointment confirmation. Specific pre-op instructions are given during counselling.' },
   { q: 'Do you offer home health services?',      a: 'Yes — home sample collection, home nursing, physiotherapy at home, and post-surgery care packages. Book via the website or call 1800-HOME-CARE.' },
@@ -25,7 +25,7 @@ const FAQs: React.FC = () => {
             <p className="section-body" style={{ marginBottom: 28, fontSize: '0.9rem' }}>Can't find what you need?<br />Our team is always ready to help.</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <a href="tel:18001234567" className="btn btn-primary btn-sm">📞 Call support</a>
-              <a href="mailto:care@medicareplus.com" className="btn btn-ghost btn-sm">✉️ Email us</a>
+              <a href="mailto:care@medicareone.com" className="btn btn-ghost btn-sm">✉️ Email us</a>
             </div>
             <div style={{ marginTop: 20, background: 'white', border: '1px solid var(--gray-150)', borderRadius: 'var(--r-lg)', padding: '14px 16px' }}>
               <div style={{ fontSize: '0.7rem', color: 'var(--gray-400)', marginBottom: 3, textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 700 }}>Avg. wait time</div>

@@ -59,7 +59,7 @@ const HealthPackages: React.FC = () => {
           Free home sample collection · Results in 24 h · NABL-accredited lab
         </p>
       </div>
-      <style>{`@media (max-width: 860px) { #packages > .container > div:last-child { grid-template-columns: 1fr !important; } }`}</style>
+      <style>{`@media (max-width: 860px) { #packages > .container > div:nth-of-type(2) { grid-template-columns: 1fr !important; } }`}</style>
     </section>
   );
 };

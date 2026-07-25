@@ -28,7 +28,7 @@ const App: React.FC = () => {
     <>
       {loadState !== 'done' && (
         <div
-          id="medicare-loader"
+          id="medicareone-loader"
           className={`loader-overlay${loadState === 'fading' ? ' fade-out' : ''}`}
         >
           <Loader />

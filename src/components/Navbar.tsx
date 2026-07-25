@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M15 2H9v6H3v6h6v6h6v-6h6V8h-6V2z"/></svg>
           </div>
           <span style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 800, color: 'var(--gray-900)', letterSpacing: '-0.03em' }}>
-            Medicare<span style={{ color: 'var(--primary)', fontWeight: 400 }}> Plus</span>
+            Medicare<span style={{ color: 'var(--primary)', fontWeight: 400 }}> One</span>
           </span>
         </a>
 
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
         <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: 'white', borderTop: '1px solid var(--gray-150)', borderBottom: '1px solid var(--gray-150)', padding: '12px 24px 20px', animation: 'slideDown 0.2s ease' }}>
           {navLinks.map(l => (
             <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-              style={{ display: 'block', padding: '11px 0', borderBottom: '1px solid var(--gray-100)', color: 'var(--gray-700)', textDecoration: 'none', fontWeight: 500, fontSize: '0.9rem' }}>
+              style={{ display: 'block', padding: '11px 0', borderBottom: '1px solid var(--gray-100)', color: 'var(--gray-700)', textDecoration: 'none', fontWeight: 500, fontSize: '0.9rem', textAlign: 'center' }}>
               {l.label}
             </a>
           ))}

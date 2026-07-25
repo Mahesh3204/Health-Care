@@ -322,10 +322,26 @@ h1,h2,h3,h4,h5,h6 {
 @media (max-width: 768px) {
   .container { padding: 0 16px; }
   .floating-panel { width: calc(100vw - 40px); right: -12px; }
+  
+  /* Make section padding smaller */
+  section[id] { padding-top: 60px !important; padding-bottom: 60px !important; }
+  #home { padding-top: calc(var(--nav-h) + 30px) !important; padding-bottom: 40px !important; }
+  
+  /* Fix inline styles on stats and banners */
+  .hero-stat-card { border-right: none !important; margin-right: 0 !important; padding-right: 0 !important; margin-bottom: 24px; text-align: center; }
+  #departments > div > div:nth-of-type(3) { padding: 24px 20px !important; justify-content: center !important; text-align: center; }
+  #departments > div > div:nth-of-type(3) > div:first-child { margin-bottom: 16px; }
 }
 @media (max-width: 480px) {
   .btn-lg { padding: 12px 22px; font-size: 0.875rem; }
   .floating-btn { padding: 12px 18px; font-size: 0.8rem; }
   body { font-size: 0.95rem; }
   .section-body { font-size: 0.95rem; }
+  
+  /* Even smaller section padding for very small screens */
+  section[id] { padding-top: 48px !important; padding-bottom: 48px !important; }
+  
+  /* Adjust cards and grids */
+  .card { padding: 16px !important; }
+  #footer-grid > div { margin-bottom: 12px; }
 }

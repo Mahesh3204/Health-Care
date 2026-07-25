@@ -25,7 +25,7 @@ const Loader: React.FC = () => {
           </svg>
         </div>
         <div style={{ textAlign: 'center' }}>
-          <div className="loader-title">Medicare<span> Plus</span></div>
+          <div className="loader-title">Medicare<span> One</span></div>
           <div className="loader-tagline" style={{ marginTop: 6 }}>Your Health, Our Priority</div>
         </div>
       </div>
